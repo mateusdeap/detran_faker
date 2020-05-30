@@ -84,12 +84,19 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
     end
 
     it 'has the first two characters as the state abbreviation' do
+<<<<<<< HEAD
       allowed_initials = %w[AM AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR
                             PE PI RJ RN RS RO RR SC SP SE TO]
+=======
+      allowed_initials = %w[AM AC AL AP AM BA CE DF
+                            ES GO MA MT MS MG PA PB PR PE PI
+                            RJ RN RS RO RR SC SP SE TO]
+>>>>>>> Implements CNH#numero_formulario_renach with tests
       renach = DetranFaker::Habilitacao::CNH.numero_formulario_renach
       starts_correctly = allowed_initials.include? renach[0..1]
       expect(starts_correctly).to be true
     end
+<<<<<<< HEAD
   end
 
   describe '#categoria' do
@@ -119,5 +126,7 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
 
       expect(all_are_valid).to be true
     end
+=======
+>>>>>>> Implements CNH#numero_formulario_renach with tests
   end
 end
