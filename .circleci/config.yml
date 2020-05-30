@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: Setup Rubygems
-          command: bash .circleci;setup-rubygems.sh
+          command: bash .circleci/setup-rubygems.sh
 
       - run:
           name: Publish to Rubygems
