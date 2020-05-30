@@ -14,6 +14,15 @@ module DetranFaker
 
           cnh_number
         end
+
+        def numero_espelho
+          numero_espelho = Random.rand(1..9).to_s
+          9.times do
+            numero_espelho = numero_espelho.dup.concat Random.rand(0..9).to_s
+          end
+
+          numero_espelho
+        end
       end
     end
   end
