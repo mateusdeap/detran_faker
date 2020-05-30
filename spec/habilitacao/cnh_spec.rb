@@ -18,7 +18,16 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
       expect(first_number).not_to eq(second_number)
     end
 
-    it 'cannot have leading zeroes'
+    it 'cannot have leading zeroes' do
+      failed = false
+      100.times do
+        cnh_number = DetranFaker::Habilitacao::CNH.numero_registro_nacional
+        failed = true if cnh_number.start_with? '0'
+        break if failed
+      end
+
+      expect(failed).to be false
+    end
   end
 
   describe '#numero_espelho' do

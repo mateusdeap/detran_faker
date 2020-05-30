@@ -7,8 +7,8 @@ module DetranFaker
     class CNH
       class << self
         def numero_registro_nacional
-          cnh_number = ''
-          11.times do
+          cnh_number = Random.rand(1..9).to_s
+          10.times do
             cnh_number = cnh_number.dup.concat Random.rand(0..9).to_s
           end
 
