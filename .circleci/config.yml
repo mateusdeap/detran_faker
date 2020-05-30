@@ -10,9 +10,34 @@ jobs:
       - checkout
       - ruby/install-deps
       - ruby/rspec-test
+  deploy:
+    docker:
+      - image: circleci/ruby:2.7-node-browsers
+    
+    working_directory: ~/detran_faker
+
+    steps:
+      - checkout
+      - run:
+          name: Setup Rubygems
+          command: bash .circleci;setup-rubygems.sh
+
+      - run:
+          name: Publish to Rubygems
+          command: |
+            gem build detran_faker.gemspec
+            gem push "detran_faker-$(git describe --tags).gem"
 
 workflows:
-  version: 1
-  test:
+  version: 2
+  test_and_deploy:
     jobs:
       - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/
