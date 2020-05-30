@@ -1,22 +1,24 @@
-# DetranFaker
+# Detran Faker
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/detran_faker`. To experiment with that code, run `bin/console` for an interactive prompt.
+Essa gem visa apenas atender a uma necessidade interna dos desenvolvedores do DETRANCE, gerando dados falsos de habilitação e veículos, porém que estão conformes às determinações do CTB.
 
-TODO: Delete this and the text above, and describe your gem
+## Estado Atual
 
-## Installation
+Ela ainda está em desenvolvimento inicial, então falta ainda muita coisa, porém o primeiro módulo que pretendo concluir é o da Habilitação.
 
-Add this line to your application's Gemfile:
+## Instalação
+
+Apenas adicione a linha abaixo ao seu Gemfile. 
 
 ```ruby
 gem 'detran_faker'
 ```
 
-And then execute:
+Então execute
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+Ou instale globalmente:
 
     $ gem install detran_faker
 
@@ -24,16 +26,10 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
-## Development
+## Contribuindo
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Bugs e contribuições de código são bem vindas. Apenas abra uma PR no GitHub: https://github.com/mateusdeap/detran_faker.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Licença
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/detran_faker.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Essa gem está disponível como código aberto sob a licença [MIT](https://opensource.org/licenses/MIT).
