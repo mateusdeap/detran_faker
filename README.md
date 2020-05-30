@@ -1,3 +1,5 @@
+[![mateusdeap](https://circleci.com/gh/mateusdeap/detran_faker.svg?style=svg)](https://app.circleci.com/pipelines/github/mateusdeap/detran_faker)
+
 # Detran Faker
 
 Essa gem visa apenas atender a uma necessidade interna dos desenvolvedores do DETRANCE, gerando dados falsos de habilitação e veículos, porém que estão conformes às determinações do CTB.
