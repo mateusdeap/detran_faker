@@ -1,4 +1,4 @@
-[![mateusdeap](https://circleci.com/gh/mateusdeap/detran_faker.svg?style=svg)](https://app.circleci.com/pipelines/github/mateusdeap/detran_faker)
+[![mateusdeap](https://circleci.com/gh/mateusdeap/detran_faker.svg?style=shield)](https://app.circleci.com/pipelines/github/mateusdeap/detran_faker)
 
 # Detran Faker
 

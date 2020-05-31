@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
     interna dos desenvolvedores do DETRANCE, gerando dados falsos de
     habilitação e veículos, porém que estão conformes às determinações
     do CTB.)
-  spec.homepage      = 'https://bitbucket.org/mateusdeapereira/detran_faker/src'
+  spec.homepage      = 'https://github.com/mateusdeap/detran_faker'
   spec.license       = 'MIT'
 
   # Specify which files should be added to the gem when it is released.
