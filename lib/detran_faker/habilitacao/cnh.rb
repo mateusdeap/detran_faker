@@ -3,7 +3,7 @@
 module DetranFaker
   # Module that contains any classes to generate data
   # related to licensing issues
-  class Habilitacao
+  module Habilitacao
     @state_initials = %w[AM AC AL AP AM BA CE DF
                          ES GO MA MT MS MG PA PB PR PE PI
                          RJ RN RS RO RR SC SP SE TO]
