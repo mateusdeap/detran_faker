@@ -4,6 +4,10 @@ Lint/RaiseException:
   Enabled: true
 Lint/StructNewOverride:
   Enabled: true
+Metrics/BlockLength:
+  Exclude:
+    - '/*.gemspec'
+    - 'spec/**/*.rb'
 Style/HashEachMethods:
   Enabled: true
 Style/HashTransformKeys:
