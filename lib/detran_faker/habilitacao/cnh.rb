@@ -53,6 +53,11 @@ module DetranFaker
 
           renach
         end
+
+        def categoria
+          possible_categories = %w[A B C D E ACC]
+          possible_categories[Random.rand(0..(possible_categories.size - 1))]
+        end
       end
     end
   end
