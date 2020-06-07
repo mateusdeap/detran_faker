@@ -30,6 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "3.9.0"
   spec.add_development_dependency "rspec_junit_formatter", "0.4.1"
 
-  spec.add_development_dependency 'rspec', '3.9.0'
-  spec.add_development_dependency 'rspec_junit_formatter', '0.4.1'
+  spec.add_dependency "i18n", "1.8.3"
 end
