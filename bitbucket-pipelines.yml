@@ -8,6 +8,7 @@ image: ruby:2.7.1
 pipelines:
   default:
     - step:
+        name: Test
         caches:
           - bundler
         script:
