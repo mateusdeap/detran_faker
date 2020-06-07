@@ -15,8 +15,7 @@ Gem::Specification.new do |spec|
     interna dos desenvolvedores do DETRANCE, gerando dados falsos de
     habilitação e veículos, porém que estão conformes às determinações
     do CTB.)
-  spec.homepage      = 'https://bitbucket.org/mateusdeapereira/detran_faker/src'
-  spec.license       = 'MIT'
+  spec.homepage      = "https://github.com/mateusdeap/detran_faker"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
