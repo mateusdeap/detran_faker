@@ -53,14 +53,11 @@ module DetranFaker
 
           renach
         end
-<<<<<<< HEAD
 
         def categoria
           possible_categories = %w[A B C D E ACC]
           possible_categories[Random.rand(0..(possible_categories.size - 1))]
         end
-=======
->>>>>>> Implements CNH#numero_formulario_renach with tests
       end
     end
   end
