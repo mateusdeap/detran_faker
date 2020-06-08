@@ -6,6 +6,7 @@ pt:
       "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS",
       "RO", "RR", "SC", "SP", "SE", "TO"]
       cnh:
+        categorias: ["A", "B", "C", "D", "E"]
         observacoes: ["A", "B", "C", "D", "E", "F", "G",
         "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q",
         "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ACC",
