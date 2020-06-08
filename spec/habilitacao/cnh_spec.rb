@@ -125,8 +125,8 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
       200.times do
         observations_array.push DetranFaker::Habilitacao::CNH.observacao
       end
-      all_are_valid = possible_observations.all? do |category|
-        observations_array.include? category
+      all_are_valid = observations_array.all? do |category|
+        possible_observations.include? category
       end
 
       expect(all_are_valid).to be true
