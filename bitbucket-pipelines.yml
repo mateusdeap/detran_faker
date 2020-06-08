@@ -8,17 +8,7 @@ image: ruby:2.7.1
 pipelines:
   default:
     - step:
-        name: Bundle Install
-        caches:
-          - bundler
+        name: Rspec Test
         script:
           - bundle install
-          - bundle exec rspec
-    - step:
-        name: Test
-        script:
-          - bundle exec rspec
-
-definitions:
-  caches:
-    bundler: ./vendor
+          - bundle exec rspec          
