@@ -93,9 +93,15 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
 
   describe "#categoria" do
     it "should be one letter" do
-      category = DetranFaker::Habilitacao::CNH.categoria
+      categories_array = []
+      100.times do
+        categories_array.push DetranFaker::Habilitacao::CNH.categoria
+      end
+      all_have_one_letter = categories_array.all? do |category|
+        category.length == 1
+      end
 
-      expect(category.length).to be 1
+      expect(all_have_one_letter).to be true
     end
 
     it "must be a valid license category" do
