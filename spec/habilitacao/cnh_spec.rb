@@ -84,9 +84,7 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
     end
 
     it "has the first two characters as the state abbreviation" do
-      allowed_initials = %w[AM AC AL AP AM BA CE DF
-                            ES GO MA MT MS MG PA PB PR PE PI
-                            RJ RN RS RO RR SC SP SE TO]
+      allowed_initials = I18n.translate("detran_faker.habilitacao.abreviacoes_estados")
       renach = DetranFaker::Habilitacao::CNH.numero_formulario_renach
       starts_correctly = allowed_initials.include? renach[0..1]
       expect(starts_correctly).to be true
@@ -101,15 +99,7 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
     end
 
     it "must be a valid license category" do
-      possible_categories = %w[A B C D E ACC]
-      category = DetranFaker::Habilitacao::CNH.categoria
-      is_valid = possible_categories.include? category
-
-      expect(is_valid).to be true
-    end
-
-    it "should generate all possible values" do
-      possible_categories = %w[A B C D E ACC]
+      possible_categories = I18n.translate("detran_faker.habilitacao.cnh.categorias")
       categories_array = []
       100.times do
         categories_array.push DetranFaker::Habilitacao::CNH.categoria
