@@ -30,10 +30,20 @@ jobs:
 
 workflows:
   version: 2
-  test_and_deploy:
+  test:
     jobs:
       - test
+  test_and_deploy:
+    jobs:
+      - test:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/
       - deploy:
+          requires:
+            - test
           filters:
             tags:
               only: /.*/
