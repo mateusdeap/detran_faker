@@ -121,4 +121,19 @@ RSpec.describe DetranFaker::Habilitacao::CNH do
       expect(all_are_valid).to be true
     end
   end
+
+  describe "#observacao" do
+    it "must be a valid observation" do
+      possible_observations = I18n.translate("detran_faker.habilitacao.cnh.observacoes")
+      observations_array = []
+      200.times do
+        observations_array.push DetranFaker::Habilitacao::CNH.observacao
+      end
+      all_are_valid = possible_observations.all? do |category|
+        observations_array.include? category
+      end
+
+      expect(all_are_valid).to be true
+    end
+  end
 end

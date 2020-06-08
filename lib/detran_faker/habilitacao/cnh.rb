@@ -57,6 +57,10 @@ module DetranFaker
         def categoria
           fetch(key: "habilitacao.cnh.categorias")
         end
+
+        def observacao
+          fetch(key: "habilitacao.cnh.observacoes")
+        end
       end
     end
   end
